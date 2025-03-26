@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-import 'homePage.dart';
+import 'pages/homePage.dart';
+
 
 
 Future<void> main() async {
   await dotenv.load(fileName: ".env");
   await Supabase.initialize(
-    url: 'https://cllcycrxpolmczpzfnzr.supabase.co',
+    url: 'https://yjirlolnrhifdxiukrkt.supabase.co',
     anonKey: dotenv.env['ANONKEYSUPABASE']!,
   );
   runApp(MaterialApp(home: const MainApp()));
